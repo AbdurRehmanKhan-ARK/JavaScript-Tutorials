@@ -15,7 +15,7 @@ console.log(myName) // "Abdur Rehman Khan"
 console.log(nickname) // "Abdur Rehman"
 
 let userOne = {
-    email: "abdurrehman@gmail.com"
+    email: "abdurrehman@gmail.com",
     name: "Abdur Rehman",
 }
 
