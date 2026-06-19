@@ -110,13 +110,16 @@ Each file corresponds to a video or concept from the series.
 ## Author
 
 **Abdur Rehman Khan**  
-BS Computer Science — FAST-NUCES Karachi  
+BS Computer Science | FAST-NUCES Karachi  
 [abdurrehmankhan0909@gmail.com](mailto:abdurrehmankhan0909@gmail.com) · [GitHub](https://github.com/AbdurRehmanKhan-ARK)
 
 ---
-
 <div align="center">
 
 *Consistency over intensity. One file. One commit. Every day.*
+<br/>
+Built with ❤️ while learning 
+<br/>
+ **Happy JavaScripting!** 🚀
 
 </div>
