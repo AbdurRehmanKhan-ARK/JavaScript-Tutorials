@@ -33,13 +33,14 @@ The goal is not just to watch and move on. Every session produces a committed fi
 JavaScript-Tutorials/
 │
 ├── 01_basics/
-│   ├── variables.js          — var, let, const, scoping rules
-│   ├── datatypes.js          — primitives, typeof, type coercion
-│   ├── operators.js          — arithmetic, comparison, logical
-│   ├── strings.js            — methods, template literals
-│   ├── conditionals.js       — if/else, ternary, switch
-│   ├── loops.js              — for, while, for...of, for...in
-│   └── basics.js             — complete consolidated practice file
+│   ├── 01_variables.js         — var, let, const, scoping rules
+│   ├── 02_dataTypes.js         — primitives, typeof, type checking
+│   ├── 03_conversionOperator.js — type conversion, coercion
+│   ├── 04_operators.js         — arithmetic, unary, assignment
+│   ├── 05_comparison.js        — equality, strict vs loose, NaN
+│   ├── 06_dataTypesII.js       — objects, arrays, reference types
+│   ├── 07_memory.js            — stack vs heap, value vs reference
+│   └── 08_strings.js           — string methods, template literals
 │
 ├── 02_functions/             — coming soon
 ├── 03_arrays/                — coming soon
@@ -54,7 +55,7 @@ JavaScript-Tutorials/
 
 | # | Module | Concepts | Status |
 |---|--------|----------|--------|
-| 01 | **Basics** | Variables, Data Types, Operators, Strings, Loops, Conditionals | ✅ In Progress |
+| 01 | **Basics** | Variables, DataTypes, Conversion, Operators, Comparison, Memory, Strings | ✅ Almost Done|
 | 02 | **Functions** | Declarations, Arrow Functions, Callbacks, Default Params, Closures | ⬜ Upcoming |
 | 03 | **Arrays** | Methods — map, filter, reduce, find, forEach, spread | ⬜ Upcoming |
 | 04 | **Objects** | Literals, Destructuring, Spread, Optional Chaining, `this` | ⬜ Upcoming |
