@@ -39,3 +39,21 @@ console.log(JSuser.greetings())
 // what if we write
 console.log(JSuser.greetings)
 // it will show the function definition, not the function call
+
+// okay lets understand how const is not immutable in terms of const object
+
+const a = 10
+/*
+a = 20
+console.log(a) // this will throw error => Assignment to constant variable.
+*/
+
+// because const is immutable in terms of variables as the value of const is stored in stack memory which is immutable, so we cannot change the value of const variable, but we can change the value of const object
+
+const b = {name: "Abdur Rehman"}
+b.name = "Abdur Rehman Khan"
+console.log(b) // this will be okay because object is stored in heap memory which is mutable
+
+/*
+because non-primitive data types are mutable on heap memory, because values are stored in heap memory but the stack memory is immutable (cannot be changed), stack memory references the heap memory via address pointer and non-primitive data types are stored in heap memory which is mutable.
+*/
