@@ -89,3 +89,38 @@ console.log(JSuser.hasOwnProperty("name")) // Basically this will return true or
 
 // lets see how to get the length of an object
 console.log(Object.keys(JSuser).length)
+
+const course = {
+    name: "JavaScript",
+    price: 999,
+    courseInstructor: "Abdur Rehman Khan",
+    courseLevel: "Beginner",
+    isPublished: true
+}
+
+// lets see de-structuring objects
+const {courseInstructor} = course
+console.log(courseInstructor) // this is a new way to extract values from an object
+// no the name its too long so
+const {courseInstructor: instructor} = course
+console.log(instructor) // same output
+
+// JSON API Intro
+
+// {
+//     name : "Abdur Rehman",
+//     email: "abdurrehmankhano@example.com",
+//     password: "123456",
+//     confirmPassword: "123456"
+// }
+
+// it can be array like
+[
+    {},
+    {},
+    {}
+]
+
+// use randomeusernamegenerator.com for API Understanding and JSON Formatter to make it more readable\
+
+// git commit -m "feat 04_objects_II.js - object destructuring and JSON API Intro " suggest me a message to push with commit that summarizes this whole js file
