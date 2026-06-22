@@ -1,0 +1,10 @@
+# Code Runner temporary files
+tempCodeRunnerFile.js
+
+# Node modules (if you install packages later)
+node_modules/
+dist/
+
+# Operating system files
+.DS_Store
+Thumbs.db
