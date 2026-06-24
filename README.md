@@ -47,7 +47,7 @@ JavaScript-Tutorials/
 ├── 02_data_structures/
 │   ├── 01_arrays_I.js              - push, pop, shift, unshift, slice, splice
 │   ├── 02_arrays_II.js             - map, filter, reduce, concat, spread
-│   ├── 03_objects.js               - literals, dot notation, bracket notation, nesting
+│   ├── 03_objects_I.js               - literals, dot notation, bracket notation, nesting
 │   └── 04_objects_II.js            - Object.keys(), values(), assign, destructuring
 │
 ├── 03_functions/
