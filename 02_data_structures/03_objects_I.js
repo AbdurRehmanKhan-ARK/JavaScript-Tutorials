@@ -57,3 +57,4 @@ console.log(b) // this will be okay because object is stored in heap memory whic
 /*
 because non-primitive data types are mutable on heap memory, because values are stored in heap memory but the stack memory is immutable (cannot be changed), stack memory references the heap memory via address pointer and non-primitive data types are stored in heap memory which is mutable.
 */
+

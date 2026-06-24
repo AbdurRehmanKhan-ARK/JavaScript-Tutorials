@@ -89,3 +89,11 @@ const myCoding = [
 myCoding.forEach((item) => {
   console.log(item.language, item.extension); // Seamless object property extraction
 });
+
+// every | some
+// every => Returns true if all elements pass the test implemented by the provided function.
+// some => Returns true if any element passes the test implemented by the provided function.
+const myArr3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+ console.log(myArr3.every((item) => item % 1 === 0)); // true
+ console.log(myArr3.some((item) => item % 3 === 0)); // true
