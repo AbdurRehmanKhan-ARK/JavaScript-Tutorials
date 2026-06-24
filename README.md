@@ -63,8 +63,9 @@ JavaScript-Tutorials/
 │   └── truthy_falsy.js              - falsy values, nullish coalescing
 │
 ├── 05_iterations/
-│   ├── basic_loops.js               - for, while, do-while, for...of, for...in
-│   └── high_order_loops.js          - forEach, map, filter, reduce, every, some
+│   ├── 01_basic_loops.js            - for, while, do-while
+│   └── 02_high_order_loops.js       - forEach, for...of, for...in
+│   └── 03_array_methods.js          - map, filter, reduce, every, some
 │
 ├── 06_dom/                          - coming soon
 ├── 07_async/                        - coming soon
