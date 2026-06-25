@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee aur Code</title>
+  </head>
+  <!-- Creating an Element -->
+  <body style="background-color: #212121; color: #fff">
+    <script>
+      const div = document.createElement("div");
+      console.log(div);
+      div.className = "main";
+      div.id = Math.round(Math.random() * 10 + 1);
+      div.setAttribute("title", "generated title");
+      div.style.color = "green";
+      div.style.backgroundColor = "#fff";
+      div.style.padding = "10px";
+      div.style.borderRadius = "10px";
+      const addText = "Chai Aur Code";
+      div.appendChild(document.createTextNode(addText)); // Add Text Node directly to the element
+      document.body.appendChild(div);
+      // now we can wrap this whole structure to a function named as createDiv and then it will take parameters for user defined values
+      // and then we loop and assign arguments to the parameters while calling that function (so ez peezy)
+
+      function createDayCard(dayName, bgColor, textColor) {
+        const div = document.createElement("div");
+        div.className = "day-card";
+
+        // Styling
+        div.style.backgroundColor = bgColor;
+        div.style.color = textColor;
+        div.style.padding = "10px";
+        div.style.margin = "5px 0";
+        div.style.borderRadius = "5px";
+
+        // Text Node attachment
+        const textNode = document.createTextNode(dayName);
+        div.appendChild(textNode);
+
+        // DOM mein append karna
+        document.body.appendChild(div);
+      }
+
+      // Ab aap loops ya array high-order methods use kar ke cards bana sakte ho!
+      const days = ["Friday", "Saturday", "Sunday"];
+      days.forEach((day) => {
+        createDayCard(day, "#ff9800", "#fff"); // Orange background wale cards
+      });
+    </script>
+  </body>
+</html>
