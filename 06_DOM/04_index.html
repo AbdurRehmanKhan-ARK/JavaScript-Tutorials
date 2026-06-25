@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM | Chai aur Coffee</title>
+  </head>
+
+  <body style="color: #fff; background-color: #212121">
+    <ul class="language">
+      <li>JavaScript</li>
+    </ul>
+  </body>
+
+  <script>
+    function addLanguage(langName) {
+      const li = document.createElement("li");
+      li.textContent = langName;
+      document.querySelector(".language").appendChild(li);
+    }
+    addLanguage("Python");
+    addLanguage("Java");
+    addLanguage("TypeScript");
+
+    function addOptimizedLang(langName) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName));
+      document.querySelector(".language").appendChild(li);
+    }
+    addOptimizedLang("Go-lang");
+    addOptimizedLang("Ruby");
+    addOptimizedLang("C++");
+
+    // EDIT
+    const secondLang = document.querySelector("li:nth-child(2)");
+    const newli = document.createElement("li");
+    newli.textContent = "Rust";
+    secondLang.replaceWith(newli);
+
+    // another way
+    const firstLan = document.querySelector("li:first-child");
+    firstLan.outerHTML = "<li>Swift</li>";
+
+    // remove
+    const remLang = document.querySelector("li:last-child");
+    remLang.remove(); // removed the last element C++
+  </script>
+</html>
