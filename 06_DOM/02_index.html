@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM | Chai Aur Code</title>
+  </head>
+  <body style="color: #fff; background-color: #212121">
+    <div class="parent">
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+    </div>
+  </body>
+
+  <script>
+    const parent = document.querySelector(".parent"); // Returns the parent node
+    console.log(parent);
+    console.log(parent.children); // Returns the children nodeList
+    console.log(parent.children[1].innerHTML); // Returns the 2nd child node
+
+    for (let i = 0; i < parent.children.length; i++) {
+      console.log(parent.children[i].innerHTML);
+    }
+    console.log(parent.firstElementChild); // Returns the first child node
+    console.log(parent.lastElementChild); // Returns the last child node
+
+    const dayOne = document.querySelector(".day");
+    console.log(dayOne.parentElement); // Returns the parent node => Monday
+    console.log(dayOne.nextElementSibling); // Returns the next sibling node => Tuesday
+
+    console.log("Nodes : ",parent.childNodes); // returns nodelist(9) => 1st element node, 2nd text node, 3rd element node, 4th text node, 5th element node, 6th text node, 7th element node, 8th text node, 9th element node, its because web is too heavy it creates a whole structural tree of all the possiblities in DOM expression tree
+  </script>
+</html>
