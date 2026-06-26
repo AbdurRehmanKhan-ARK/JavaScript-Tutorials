@@ -1,0 +1,177 @@
+html {
+  /* Resets the default padding and margin of the root element to prevent accidental scrollbars */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* Sets a clean, modern sans-serif typography for the entire project */
+  font-family: sans-serif;
+
+  /* Enables Flexbox layout to easily align and position child elements inside the viewport */
+  display: flex;
+
+  /* Stacks all child elements (nav, canvas) vertically into a column structure */
+  flex-direction: column;
+
+  /* Aligns the stacked content perfectly to the horizontal center (X-axis) */
+  align-items: center;
+
+  /* Centers the content vertically (Y-axis) relative to the body container */
+  justify-content: center;
+
+  /* Ensures the body container occupies exactly 100% of the screen's viewport height */
+  height: 100vh;
+
+  /* Overrides the default browser margins to make the layout flush with the screen edges */
+  margin: 0;
+
+  /* Sets the initial charcoal-dark text color for maximum contrast against the white backdrop */
+  color: #212121;
+
+  /* Defines the initial background state of the application as pure white */
+  background-color: #ffffff;
+
+  /* JAVASCRIPT ANIMATION MAGIC: Smoothly transitions the colors over 0.5s when active states change */
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
+}
+
+nav {
+  /* Detaches the navigation bar from the body's normal flex flow to lock it down at a specific spot */
+  position: absolute;
+
+  /* Places the navigation panel exactly 20px down from the very top of the window */
+  top: 20px;
+
+  /* Aligns the 'Home' and 'YouTube' links horizontally side-by-side using Flexbox */
+  display: flex;
+
+  /* Introduces a clean 20px spacing gap exclusively between the internal anchor tags */
+  gap: 20px;
+}
+
+nav a.nav-link {
+  /* DYNAMIC EFFECT: Inherits whatever font color the body is currently using (auto-adapts dynamically) */
+  color: inherit;
+
+  /* Eliminates the standard browser underline style characteristic of default hyperlinks */
+  text-decoration: none;
+
+  /* Gives the navigation link text a bold, prominent weight */
+  font-weight: bold;
+
+  /* DYNAMIC EFFECT: Forces the border color to mirror the text color, shifting seamlessly between white/black */
+  border: 2px solid currentColor;
+
+  /* Controls spacing inside the link boundary box (Top/Bottom: 8px, Left/Right: 18px) */
+  padding: 8px 18px;
+
+  /* Rounds off the container edges to transform sharp rectangular links into smooth button pills */
+  border-radius: 5px;
+
+  /* Ensures any text or background changes during hover states transition smoothly over 0.3s */
+  transition: all 0.3s ease;
+}
+
+nav a.nav-link:hover {
+  /* Swaps the anchor background to a solid charcoal theme upon user hover */
+  background-color: #212121;
+
+  /* Forces the anchor text color to crisp white on hover for legibility */
+  color: #fff;
+
+  /* Explicitly locks the border boundary to the same charcoal tone on hover */
+  border-color: #212121;
+}
+
+.canvas {
+  /* Multi-element container modifier that forces text inside headers and button segments to centralize */
+  text-align: center;
+}
+
+h1 {
+  /* Creates a localized 30px separation boundary beneath the main banner to push color circles down */
+  margin-bottom: 30px;
+}
+
+.button {
+  /* Converts simple inline spans to handle height/width requirements while letting them sit side-by-side */
+  display: inline-block;
+
+  /* Establishes standard dimensions for the color switchers (100px wide) */
+  width: 100px;
+
+  /* Establishes standard dimensions for the color switchers (100px high) */
+  height: 100px;
+
+  /* Wraps a discrete dark charcoal containment outline perimeter around every circle */
+  border: 2px solid #333;
+
+  /* MATHEMATICAL PRINCIPLE: Setting border-radius to exactly 50% morphs a perfect square into a crisp circle */
+  border-radius: 50%;
+
+  /* Adjusts the system cursor to show a pointer hand, indicating the circle is explicitly an interactive button */
+  cursor: pointer;
+
+  /* Applies a mandatory 10px buffer margin on all sides of each circle to isolate them cleanly from neighbors */
+  margin: 10px;
+
+  /* Injects a subtle, realistic ambient drop shadow directly underneath each circular interface node */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+  /* Configures size transformations (scaling) on hover to blend smoothly within a 0.2s timeframe */
+  transition: transform 0.2s ease;
+
+  /* GLITCH FIX: Blocks text highlighted behaviors on multi-clicks, eliminating the text cursor '|' on white */
+  user-select: none;
+  -webkit-user-select: none; /* Cross-platform structural standard explicitly required for Safari browsers */
+}
+
+.button:hover {
+  /* HOVER ZOOM: Dynamically expands the focused target element to 110% scale for visual engagement */
+  transform: scale(1.1);
+}
+
+/* Individual identity targets used by JavaScript to manipulate page state and colored via CSS */
+#grey {
+  background-color: grey;
+}
+#white {
+  background-color: white;
+}
+#blue {
+  background-color: blue;
+}
+#yellow {
+  background-color: yellow;
+}
+#green {
+  background-color: green;
+}
+
+h2 {
+  /* Displaces the lower instructional heading 40px downwards away from the interactive interaction row */
+  margin-top: 40px;
+
+  /* Sets standard regular text font weighting instead of traditional bold headlines */
+  font-weight: normal;
+}
+
+h2 span {
+  /* Forces the secondary sub-heading line to drop to a fresh line layer on its own */
+  display: block;
+
+  /* Compresses the font styling scale slightly down to 80% size for structural hierarchy */
+  font-size: 0.8em;
+
+  /* Tints text color to soft charcoal gray so it clearly contrasts secondary content */
+  color: #666;
+
+  /* Separates description layers with a micro 10px top spacing buffer margin */
+  margin-top: 10px;
+
+  /* Ensures that subtext color alterations map across states fluidly within 0.5s */
+  transition: color 0.5s ease;
+}
