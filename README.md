@@ -126,10 +126,10 @@ node 05_iterations/02_high_order_loops.js
 Every session follows a consistent commit format:
 
 ```
-feat: 03_functions/04_arrow_func        | arrow functions, implicit return, this keyword
-feat: 04_control_flow/truthy_falsy      | falsy values, nullish coalescing
-feat: 05_iterations/02_high_order_loops | forEach, map, filter, reduce
-feat: 06_DOM/01_intro_to_dom            | basic selectors, attributes, textContent vs innerText
+feat(functions): arrow functions, implicit return and closure with lexical scoping
+feat(truthyFalsy): falsy values and nullish coalescing operator
+feat(iterations): forEach, map, filter and reduce methods
+feat(dom): selectors, attributes, textContent vs innerText
 ```
 
 > The commit history is a readable record of what was learned and when.
