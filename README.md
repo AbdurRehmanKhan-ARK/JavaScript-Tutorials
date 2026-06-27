@@ -92,7 +92,7 @@ JavaScript-Tutorials/
 │   │   ├── script.js
 │   │   └── style.css
 │   │
-│   └── 📁 04_guess_the_number/       # ⏳ In progress
+│   └── 📁 04_guess_the_number/      
 │       ├── index.html
 │       ├── script.js
 │       └── style.css
