@@ -87,7 +87,7 @@ JavaScript-Tutorials/
 │   │   ├── script.js
 │   │   └── style.css
 │   │
-│   ├── 📁 03_digital_clock/          # ⏳ In progress
+│   ├── 📁 03_digital_clock/         
 │   │   ├── index.html
 │   │   ├── script.js
 │   │   └── style.css
