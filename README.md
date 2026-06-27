@@ -181,6 +181,7 @@ All feedback, corrections, and suggestions are genuinely welcome.
 - 🤝 **Want to collaborate** - reach out via email
 
 This is a learning repo, not a perfect one. Every correction makes it better.
+
 ---
 
 ## Author
