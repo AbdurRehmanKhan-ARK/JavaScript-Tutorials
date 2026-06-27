@@ -19,7 +19,7 @@ _Every concept practiced in isolation. Every file committed. Every session track
 
 ---
 
-## 📖 About
+## About
 
 This repository documents a structured, file-per-concept approach to learning JavaScript from the ground up. Each topic from the **Chai aur Code** YouTube series is practiced in its own dedicated file — no combined scripts, no skipped concepts.
 
@@ -27,7 +27,7 @@ This repository documents a structured, file-per-concept approach to learning Ja
 
 ---
 
-## 🗂️ Structure
+## Structure
 
 ```
 JavaScript-Tutorials/
@@ -74,35 +74,63 @@ JavaScript-Tutorials/
 │   ├── 03_index.html                 # Programmatic element generation & textNode mapping
 │   └── 04_index.html                 # DOM optimization, append vs replace elements
 │
-├── 📁 07_projects/01_colorChanger/   # 🎨 Real-world color customization project
-│   ├── chaiAurCode.js
-│   ├── index.html
-│   └── style.css
+├── 📁 07_projects/
+│   ├── index.html                    # Project home — links to all mini projects
+│   │
+│   ├── 📁 01_colorChanger/
+│   │   ├── index.html
+│   │   ├── script.js
+│   │   └── style.css
+│   │
+│   ├── 📁 02_BMI_calculator/
+│   │   ├── index.html
+│   │   ├── script.js
+│   │   └── style.css
+│   │
+│   ├── 📁 03_digital_clock/          # ⏳ In progress
+│   │   ├── index.html
+│   │   ├── script.js
+│   │   └── style.css
+│   │
+│   └── 📁 04_guess_the_number/       # ⏳ In progress
+│       ├── index.html
+│       ├── script.js
+│       └── style.css
 │
-├── 📁 08_async/                      # ⏳ Coming soon
-├── 📁 09_oop/                        # ⏳ Coming soon
+├── 📁 08_events/                     # ⏳ Coming soon
+├── 📁 09_async/                      # ⏳ Coming soon
+├── 📁 10_API/                        # ⏳ Coming soon
+├── 📁 11_promises/                   # ⏳ Coming soon
+├── 📁 12_fetch/                      # ⏳ Coming soon
+├── 📁 13_OOP/                        # ⏳ Coming soon
+├── 📁 14_prototype/                  # ⏳ Coming soon
 └── 📄 README.md
 ```
 
 ---
 
-## 🗺️ Topics Roadmap
+## Topics Roadmap
 
-| #   | Module                     | Concepts Covered                                                                                                                                                                                   | Status      |
-| --- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| 01  | **Primitives & Operators** | `var` `let` `const` · Primitives & `typeof` · Type conversion · Arithmetic operators · Strict vs loose equality · Symbols & BigInt · Stack vs heap · String methods · Number & Math · Date objects | ✅ Complete |
-| 02  | **Data Structures**        | Arrays — `push` `pop` `slice` `splice` · `map` `filter` `reduce` `concat` spread · Object literals · dot & bracket notation · `Object.keys()` `assign` · Destructuring                             | ✅ Complete |
-| 03  | **Functions**              | Declarations vs expressions · Scope · Hoisting · Arrow functions · IIFE · Execution context & call stack                                                                                           | ✅ Complete |
-| 04  | **Control Flow**           | if/else · switch · Ternary · Truthy & falsy values · Nullish coalescing                                                                                                                            | ✅ Complete |
-| 05  | **Iterations**             | for · while · do-while · for...of · for...in · forEach · map · filter · reduce · every · some                                                                                                      | ✅ Complete |
-| 06  | **DOM**                    | Selectors · Window vs Document · Tree navigation · Element creation & modification · Edit/Remove performance                                                                                       | ✅ Complete |
-| 07  | **Async JS**               | Callbacks · Promises · `async/await` · `fetch` API · Error handling                                                                                                                                | ⬜ Upcoming |
-| 08  | **OOP**                    | Classes · Inheritance · Prototypes · `new` keyword · `this` binding                                                                                                                                | ⬜ Upcoming |
-| 09  | **Modules**                | `import/export` · ES Modules · Module patterns                                                                                                                                                     | ⬜ Upcoming |
+| Folder | Module | Files | Concepts Covered | Status |
+|--------|--------|-------|-----------------|--------|
+| `01_primitives_and_operators/` | **Primitives & Operators** | 10 files | `var` `let` `const` · Primitives & `typeof` · Type conversion & coercion · Arithmetic operators · Strict vs loose equality · Symbols & BigInt · Stack vs heap · String methods · Number & Math · Date objects | ✅ Complete |
+| `02_data_structures/` | **Data Structures** | 4 files | Arrays — `push` `pop` `slice` `splice` · `map` `filter` `reduce` `concat` spread · Object literals · dot & bracket notation · `Object.keys()` `assign` · Destructuring | ✅ Complete |
+| `03_functions/` | **Functions** | 6 files | Declarations vs expressions · Scope · Hoisting & TDZ · Arrow functions · IIFE · Execution context & call stack | ✅ Complete |
+| `04_control_flow/` | **Control Flow** | 2 files | if/else · switch · Ternary · Truthy & falsy · Nullish coalescing | ✅ Complete |
+| `05_iterations/` | **Iterations** | 3 files | `for` `while` `do-while` · `for...of` `for...in` · `forEach` · `map` `filter` `reduce` `every` `some` | ✅ Complete |
+| `06_DOM/` | **DOM** | 5 files | Selectors · Window vs Document · Tree navigation · Element creation & modification · Append vs replace performance | ✅ Complete |
+| `07_projects/` | **Projects** | 4 projects | Color Changer · BMI Calculator · Digital Clock · Guess the Number | 🔄 In Progress |
+| `08_events/` | **Events** | — | Event listeners · Bubbling & capturing · Event delegation · `preventDefault` | ⬜ Upcoming |
+| `09_async/` | **Async JS** | — | Callbacks · Callback hell · Introduction to Promises | ⬜ Upcoming |
+| `10_API/` | **APIs** | — | What is an API · REST basics · JSON · Working with real APIs | ⬜ Upcoming |
+| `11_promises/` | **Promises** | — | `Promise` constructor · `.then` `.catch` `.finally` · `Promise.all` `Promise.race` | ⬜ Upcoming |
+| `12_fetch/` | **Fetch** | — | `fetch()` · `async/await` · Error handling · Chaining requests | ⬜ Upcoming |
+| `13_OOP/` | **OOP** | — | Classes · Constructor · Inheritance · `super` · `this` binding | ⬜ Upcoming |
+| `14_prototype/` | **Prototypes** | — | Prototype chain · `__proto__` · `Object.create` · Prototype vs class | ⬜ Upcoming |
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 **Requirements:** Node.js v18+
 
@@ -121,7 +149,7 @@ node 05_iterations/02_high_order_loops.js
 
 ---
 
-## 📝 Commit Convention
+## Commit Convention
 
 Every session follows a consistent commit format:
 
@@ -136,25 +164,23 @@ feat(dom): selectors, attributes, textContent vs innerText
 
 ---
 
-## 📺 Series Reference
+## Series Reference
 
 This repository follows the **JavaScript series by [Chai aur Code](https://www.youtube.com/@chaiaurcode)** on YouTube.
 Each file corresponds to a video or concept from the series.
 
 ---
 
-## 👤 Author
+## Author
 
 **Abdur Rehman Khan**
 BS Computer Science · FAST-NUCES Karachi
-📧 abdurrehmankhan0909@gmail.com · 🐙 [GitHub](https://github.com/AbdurRehmanKhan-ARK)
+abdurrehmankhan0909@gmail.com · [GitHub](https://github.com/AbdurRehmanKhan-ARK)
 
 ---
 
 <div align="center">
 
 _Consistency over intensity. One file. One commit. Every day._
-
-Built with ❤️ while learning — Happy JavaScripting! 🚀
 
 </div>
