@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html" class="nav-link">Home</a>
+      <a
+        target="_blank"
+        class="nav-link"
+        href="https://www.youtube.com/@chaiaurcode"
+        >Youtube Channel</a
+      >
+    </nav>
+    <div class="wrapper">
+      <h1>Guess the Number Game</h1>
+      <p>Try and guess the number between 1 and 100</p>
+      <p>You have 10 guesses to guess the number</p>
+      <br />
+
+      <form class="form">
+        <label2 for="guessField" id="guess">Guess a Number</label2>
+        <input type="text" id="guessField" class="guessField" />
+        <input
+          type="submit"
+          id="subt"
+          value="Submit Guess"
+          class="guessSubmit"
+        />
+      </form>
+
+      <div class="resultParas">
+        <p>Previous Guesses: <span class="guesses"></span></p>
+        <p>
+          Trials Remaining: <span class="lastResult"></span>
+        </p>
+        <p class="lowOrHi"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
