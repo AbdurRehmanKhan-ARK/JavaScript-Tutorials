@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Events</title>
+  </head>
+  <body style="background-color: #414141; color: aliceblue">
+    <h2>Amazing image</h2>
+    <div>
+      <ul id="images">
+        <li>
+          <img
+            width="200px"
+            id="photoshop"
+            src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt="photoshop"
+          />
+        </li>
+
+        <li>
+          <img
+            width="200px"
+            id="japan"
+            src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+
+        <li>
+          <img
+            width="200px"
+            id="river"
+            src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+
+        <li>
+          <img
+            width="200px"
+            id="owl"
+            src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+
+        <li>
+          <img
+            width="200px"
+            id="prayer"
+            src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li>
+          <a style="color: aliceblue" href="https://google.com" id="google"
+            >Google</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    document.getElementById("owl").onclick = function () {
+      alert("You clicked on the owl"); // onclick is old now, we use addEventListener in modern era which gives us more features like propagation
+    };
+    // event object attributes => type (keyboard types events, mouse events), timestamp(change date activities), preventDefault (preventing default behaviour), target (target element), currentTarget (current target element), srcElement, clientX, clientY, screenX, screenY, ctrlkey, altkey, shiftkey, keyCode
+
+    // attachEvent is also older version
+    // jQuery - 'on' was used instead of addEventListener
+
+    // document.getElementById("google").addEventListener("click", function (e) {}, false); // third parameter(true) is for capturing phase, false is for bubbling phase, capturing phase => top to bottom, bubbling phase => bottom to top
+
+    /* 
+    document.getElementById('images').addEventListener("click", function (e) {
+        console.log("clicked inside the ul")
+     }, false)
+     document.getElementById('owl').addEventListener('click', function (e) {
+        console.log("clicked on the owl")
+     },false)
+    */
+
+    // here comes the trick, that if a user clicks on owl then the ul event handler WILL also run but after the owl event handler will run (bottom to top) this is event propagation i.e bubbling here
+    // lets try true => capturing phase
+
+    /*
+    document.getElementById("images").addEventListener("click",function (e) {
+        console.log("clicked inside the ul");
+      },true,);
+    document.getElementById("owl").addEventListener("click",function (e) {
+        console.log("clicked on the owl");
+      },true,);
+
+    // BUT if we want to stop event propagation then we use event.stopPropagation() just like preventDefault, because if in case we have separate event handlers for different elements then if we use event.stopPropagation() then the event handler will only run for that particular element and not for the rest of the elements smjheeey
+
+    document.getElementById("images").addEventListener(
+      "click",
+      function (e) {
+        console.log("clicked inside the ul");
+      },
+      false,
+    );
+    document.getElementById("owl").addEventListener(
+      "click",
+      function (e) {
+        console.log("clicked on the owl");
+        e.stopPropagation();
+      },
+      false,
+    );
+
+    document.getElementById("google").addEventListener(
+      "click",
+      function (e) {
+        e.stopPropagation();
+        console.log("google clicked");
+        e.preventDefault();
+      },
+      false,
+    ); // this will prevent the default behaviour of the link + no bubbling 
+    
+    */
+    // lets take a scenario that when a user clicks on an image it should disappear
+    /*
+        document.querySelector('#images').addEventListener("click", function (e) {
+        console.log(e.target); // this will give us the img tag, coz we click on image na
+        console.log(e.target.parentNode); // this will give us the li tag (parent of img ) 
+        let removeIt = e.target.parentNode;
+        removeIt.remove();
+        // removeIt.parentNode.removeChild(removeIt); // this will also work
+        // but it will not work becaues even if we click on just a single image all images disappear
+    },false)
+    */
+
+    document.querySelector("#images").addEventListener('click', function (e) {
+        console.log(e.target.tagName)
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id)
+            let li = e.target.parentNode;
+            li.remove();
+        }
+    },false)
+  </script>
+</html>
