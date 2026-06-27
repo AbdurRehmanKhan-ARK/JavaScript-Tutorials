@@ -119,7 +119,7 @@ JavaScript-Tutorials/
 | `04_control_flow/` | **Control Flow** | 2 files | if/else · switch · Ternary · Truthy & falsy · Nullish coalescing | ✅ Complete |
 | `05_iterations/` | **Iterations** | 3 files | `for` `while` `do-while` · `for...of` `for...in` · `forEach` · `map` `filter` `reduce` `every` `some` | ✅ Complete |
 | `06_DOM/` | **DOM** | 5 files | Selectors · Window vs Document · Tree navigation · Element creation & modification · Append vs replace performance | ✅ Complete |
-| `07_projects/` | **Projects** | 4 projects | Color Changer · BMI Calculator · Digital Clock · Guess the Number | 🔄 In Progress |
+| `07_projects/` | **Projects** | 4 projects | Color Changer · BMI Calculator · Digital Clock · Guess the Number | ✅ Complete |
 | `08_events/` | **Events** | — | Event listeners · Bubbling & capturing · Event delegation · `preventDefault` | ⬜ Upcoming |
 | `09_async/` | **Async JS** | — | Callbacks · Callback hell · Introduction to Promises | ⬜ Upcoming |
 | `10_API/` | **APIs** | — | What is an API · REST basics · JSON · Working with real APIs | ⬜ Upcoming |
