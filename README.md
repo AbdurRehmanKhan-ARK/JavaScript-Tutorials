@@ -194,6 +194,5 @@ abdurrehmankhan0909@gmail.com · [GitHub](https://github.com/AbdurRehmanKhan-ARK
 
 <div align="center">
 
-_Consistency over intensity. One file. One commit. Every day._
-
+_Built in public. Imperfect by design. Improving every commit._
 </div>
