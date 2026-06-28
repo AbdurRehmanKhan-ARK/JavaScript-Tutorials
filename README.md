@@ -108,17 +108,16 @@ JavaScript-Tutorials/
 │       └── style.css
 │
 ├── 📁 08_events/
-│   ├── events.html                   # onclick, addEventListener, event object, bubbling, capturing, delegation
-│   ├── async.js                      # sync vs async theory, event loop, call stack, microtask vs callback queue
-│   ├── 01_async_projects.html        # setTimeout and clearTimeout with DOM interaction
-│   └── 02_async_projects.html        # setInterval and clearInterval with start/stop buttons
+│   ├── events.html                   # onclick vs addEventListener, event object, bubbling, capturing, stopPropagation, preventDefault, event delegation
+│   ├── async.js                      # sync vs async model, call stack, Web APIs, callback queue, microtask queue, event loop
+│   ├── 01_async_projects.html        # setTimeout and clearTimeout — stop button cancels pending timer
+│   └── 02_async_projects.html        # setInterval and clearInterval — start/stop buttons control repeated execution
 │
-├── 📁 09_async/                      # ⏳ Coming soon
-├── 📁 10_API/                        # ⏳ Coming soon
-├── 📁 11_promises/                   # ⏳ Coming soon
-├── 📁 12_fetch/                      # ⏳ Coming soon
-├── 📁 13_OOP/                        # ⏳ Coming soon
-├── 📁 14_prototype/                  # ⏳ Coming soon
+├── 📁 09_API/                        # ⏳ Coming soon
+├── 📁 10_promises/                   # ⏳ Coming soon
+├── 📁 11_fetch/                      # ⏳ Coming soon
+├── 📁 12_OOP/                        # ⏳ Coming soon
+├── 📁 13_prototype/                  # ⏳ Coming soon
 └── 📄 README.md
 ```
 
@@ -135,13 +134,12 @@ JavaScript-Tutorials/
 | `05_iterations/` | **Iterations** | 3 files | `for` `while` `do-while` · `for...of` `for...in` · `forEach` · `map` `filter` `reduce` `every` `some` | ✅ Complete |
 | `06_DOM/` | **DOM** | 5 files | Selectors · Window vs Document · Tree navigation · Element creation & modification · Append vs replace performance | ✅ Complete |
 | `07_projects/` | **Projects** | 6 projects | Color Changer · BMI Calculator · Digital Clock · Guess the Number · Keyboard Check · Unlimited Colors | ✅ Complete |
-| `08_events/` | **Events & Async Foundations** | 4 files | `onclick` vs `addEventListener` · Event object properties · Bubbling & capturing · `stopPropagation` · `preventDefault` · Event delegation · Sync vs async model · Call stack · Web APIs · Callback queue · Microtask queue · Event loop · `setTimeout` · `setInterval` · `clearTimeout` · `clearInterval` | ✅ Complete |
-| `09_async/` | **Async JS** | — | Callbacks · Callback hell · Introduction to Promises | ⬜ Upcoming |
-| `10_API/` | **APIs** | — | What is an API · REST basics · JSON · Working with real APIs | ⬜ Upcoming |
-| `11_promises/` | **Promises** | — | `Promise` constructor · `.then` `.catch` `.finally` · `Promise.all` `Promise.race` | ⬜ Upcoming |
-| `12_fetch/` | **Fetch** | — | `fetch()` · `async/await` · Error handling · Chaining requests | ⬜ Upcoming |
-| `13_OOP/` | **OOP** | — | Classes · Constructor · Inheritance · `super` · `this` binding | ⬜ Upcoming |
-| `14_prototype/` | **Prototypes** | — | Prototype chain · `__proto__` · `Object.create` · Prototype vs class | ⬜ Upcoming |
+| `08_events/` | **Events & Async Foundations** | 4 files | `onclick` vs `addEventListener` · Event object · Bubbling & capturing · `stopPropagation` · `preventDefault` · Event delegation · Sync vs async model · Call stack · Web APIs · Callback queue · Microtask queue · Event loop · `setTimeout` · `setInterval` · `clearTimeout` · `clearInterval` | ✅ Complete |
+| `9_API/` | **APIs** | — | What is an API · REST basics · JSON · Working with real APIs | ⬜ Upcoming |
+| `10_promises/` | **Promises** | — | `Promise` constructor · `.then` `.catch` `.finally` · `Promise.all` `Promise.race` | ⬜ Upcoming |
+| `11_fetch/` | **Fetch** | — | `fetch()` · `async/await` · Error handling · Chaining requests | ⬜ Upcoming |
+| `12_OOP/` | **OOP** | — | Classes · Constructor · Inheritance · `super` · `this` binding | ⬜ Upcoming |
+| `13_prototype/` | **Prototypes** | — | Prototype chain · `__proto__` · `Object.create` · Prototype vs class | ⬜ Upcoming |
 
 ---
 
