@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #1a1a2e; /* dark start color */
+  color: #fff; /* text white */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s ease;
+}
+/* how to make the buttons of home and yt channel centered on page */
+
+nav {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 14px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+}
+nav a.nav-link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid currentColor;
+  padding: 8px 18px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+nav a.nav-link:hover {
+  background-color: #212121;
+  color: #fff;
+  border-color: #212121;
+}
+
+.center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+button {
+  padding: 10px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+#start {
+  background-color: #fff;
+  color: #222;
+}
+
+#stop {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+button:hover {
+  opacity: 0.85;
+}
