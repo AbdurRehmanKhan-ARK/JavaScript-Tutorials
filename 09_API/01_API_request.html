@@ -1,0 +1,76 @@
+<!--
+The XMLHttpRequest.readyState property returns the state an XMLHttpRequest client is in. An XHR client exists in one of the following states:
+
+Value	State	            Description
+0	    UNSENT	            Client has been created. open() not called yet, open() sends the request.
+1	    OPENED	            open() has been called.
+2	    HEADERS_RECEIVED	send() has been called, and headers and status are available.
+3	    LOADING	            Downloading; responseText holds partial data.
+4	    DONE	            The operation is complete.
+
+these are ready states in XMLHttpRequest, request in XML is called AJAX request
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #212121; color: aliceblue">
+    <div id="data">
+      <button class="ark">Get Data</button>
+    </div>
+  </body>
+
+  <script>
+    /*
+
+    // lets take my github repo in request
+    const requestURL = "https://api.github.com/users/AbdurRehmanKhan-ARK";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", requestURL); // has two parameters 1. (method) type of request, 2. is string => url, open() is not usually called by itself but by the send() method
+    xhr.send();
+    console.log(xhr.readyState); // which tells us the state of the request => 1: tells us that the request is open 0: tells us that the request is not open, but its not continuosly printing 1, then closed, we need to track it continuously 
+
+    // we use .onreadystatechange method that tells what to do when the state changes
+    xhr.onreadystatechange = function () {
+      console.log(xhr.readyState);
+      if (xhr.readyState === 4 ) {
+            const data = JSON.parse(this.responseText); // this , because we are inside the function , so to target current called request  we use this
+            console.log(typeof data) // => string
+            console.log(data.followers) 
+      }
+    }; 
+    */
+    // so whenver the state changes, the function will be called 1-2-3-4
+
+    // now comes the task: now extract photo of AbdurRehmanKhan-ARK, some information about him and nake a button on which when user clicks it it shows it the information
+
+    const btn = document.querySelector(".ark");
+    btn.addEventListener("click", () => {
+      const requestURL = "https://api.github.com/users/AbdurRehmanKhan-ARK";
+      const xhr = new XMLHttpRequest();
+      xhr.open("GET", requestURL);
+      xhr.send();
+      console.log(xhr.readyState);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          const data = JSON.parse(this.responseText);
+          const div = document.getElementById("data");
+          div.innerHTML = `
+                <img src="${data.avatar_url}"width="120" style="border-radius: 50%;   margin-top: 20px;"/>
+                <h2 style="margin-top: 12px;">${data.name}</h2>
+                <p>Public Repos: ${data.public_repos}</p>
+                <p>Followers: ${data.followers}</p>
+                <p>Location: ${data.location}</p>
+              `;
+        }
+      };
+    });
+
+    // lets discuss a well known engine on which JS runs
+    // V8 - Google's open source JavaScript engine
+  </script>
+</html>
