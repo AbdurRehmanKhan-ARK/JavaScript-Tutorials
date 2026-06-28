@@ -77,28 +77,38 @@ JavaScript-Tutorials/
 ├── 📁 07_projects/
 │   ├── index.html                    # Project home - links to all mini projects
 │   │
-│   ├── 📁 01_colorChanger/
+│   ├── 📁 01_colorChanger/           # DOM events and style manipulation
 │   │   ├── index.html
 │   │   ├── script.js
 │   │   └── style.css
 │   │
-│   ├── 📁 02_BMI_calculator/
+│   ├── 📁 02_BMI_calculator/         # Form handling and input validation
 │   │   ├── index.html
 │   │   ├── script.js
 │   │   └── style.css
 │   │
-│   ├── 📁 03_digital_clock/         
+│   ├── 📁 03_digital_clock/          # setInterval and Date object
 │   │   ├── index.html
 │   │   ├── script.js
 │   │   └── style.css
 │   │
-│   └── 📁 04_guess_the_number/      
+│   ├── 📁 04_guess_the_number/       # Game logic, DOM manipulation, event handling
+│   │   ├── index.html
+│   │   ├── script.js
+│   │   └── style.css
+│   │
+│   ├── 📁 05_keyboard_check/         # Keyboard events and event object properties
+│   │   ├── index.html
+│   │   ├── script.js
+│   │   └── style.css
+│   │
+│   └── 📁 06_unlimited_colors/       # setInterval, clearInterval, random hex colors
 │       ├── index.html
 │       ├── script.js
 │       └── style.css
 │
-├── 📁 08_events/                     # ⏳ Coming soon
-├── 📁 09_async/                      # ⏳ Coming soon
+├── 📁 08_events/                     # ✅ Complete
+├── 📁 09_async/                      # ✅ Complete
 ├── 📁 10_API/                        # ⏳ Coming soon
 ├── 📁 11_promises/                   # ⏳ Coming soon
 ├── 📁 12_fetch/                      # ⏳ Coming soon
@@ -119,14 +129,14 @@ JavaScript-Tutorials/
 | `04_control_flow/` | **Control Flow** | 2 files | if/else · switch · Ternary · Truthy & falsy · Nullish coalescing | ✅ Complete |
 | `05_iterations/` | **Iterations** | 3 files | `for` `while` `do-while` · `for...of` `for...in` · `forEach` · `map` `filter` `reduce` `every` `some` | ✅ Complete |
 | `06_DOM/` | **DOM** | 5 files | Selectors · Window vs Document · Tree navigation · Element creation & modification · Append vs replace performance | ✅ Complete |
-| `07_projects/` | **Projects** | 4 projects | Color Changer · BMI Calculator · Digital Clock · Guess the Number | ✅ Complete |
-| `08_events/` | **Events** | - | Event listeners · Bubbling & capturing · Event delegation · `preventDefault` | ⬜ Upcoming |
-| `09_async/` | **Async JS** | - | Callbacks · Callback hell · Introduction to Promises | ⬜ Upcoming |
-| `10_API/` | **APIs** | - | What is an API · REST basics · JSON · Working with real APIs | ⬜ Upcoming |
-| `11_promises/` | **Promises** | - | `Promise` constructor · `.then` `.catch` `.finally` · `Promise.all` `Promise.race` | ⬜ Upcoming |
-| `12_fetch/` | **Fetch** | - | `fetch()` · `async/await` · Error handling · Chaining requests | ⬜ Upcoming |
-| `13_OOP/` | **OOP** | - | Classes · Constructor · Inheritance · `super` · `this` binding | ⬜ Upcoming |
-| `14_prototype/` | **Prototypes** | - | Prototype chain · `__proto__` · `Object.create` · Prototype vs class | ⬜ Upcoming |
+| `07_projects/` | **Projects** | 6 projects | Color Changer · BMI Calculator · Digital Clock · Guess the Number · Keyboard Check · Unlimited Colors | ✅ Complete |
+| `08_events/` | **Events** | 1 file | Event listeners · Bubbling & capturing · Event delegation · `preventDefault` · `stopPropagation` | ✅ Complete |
+| `09_async/` | **Async JS** | 1 file | Single-threaded model · Event loop · Call stack · Web APIs · Callback queue · Microtask queue · `setTimeout` · `setInterval` | ✅ Complete |
+| `10_API/` | **APIs** | — | What is an API · REST basics · JSON · Working with real APIs | ⬜ Upcoming |
+| `11_promises/` | **Promises** | — | `Promise` constructor · `.then` `.catch` `.finally` · `Promise.all` `Promise.race` | ⬜ Upcoming |
+| `12_fetch/` | **Fetch** | — | `fetch()` · `async/await` · Error handling · Chaining requests | ⬜ Upcoming |
+| `13_OOP/` | **OOP** | — | Classes · Constructor · Inheritance · `super` · `this` binding | ⬜ Upcoming |
+| `14_prototype/` | **Prototypes** | — | Prototype chain · `__proto__` · `Object.create` · Prototype vs class | ⬜ Upcoming |
 
 ---
 
@@ -177,7 +187,7 @@ Found a bug in one of the projects? Have a cleaner implementation in mind?
 All feedback, corrections, and suggestions are genuinely welcome.
 
 - 🐛 **Bug or mistake** - open an issue
-- 💡 **Better approach** - start a discussion  
+- 💡 **Better approach** - start a discussion
 - 🤝 **Want to collaborate** - reach out via email
 
 This is a learning repo, not a perfect one. Every correction makes it better.
@@ -195,4 +205,5 @@ abdurrehmankhan0909@gmail.com · [GitHub](https://github.com/AbdurRehmanKhan-ARK
 <div align="center">
 
 _Built in public. Imperfect by design. Improving every commit._
+
 </div>
