@@ -113,8 +113,13 @@ JavaScript-Tutorials/
 │   ├── 01_async_projects.html        # setTimeout and clearTimeout — stop button cancels pending timer
 │   └── 02_async_projects.html        # setInterval and clearInterval — start/stop buttons control repeated execution
 │
-├── 📁 09_API/                        # ⏳ Coming soon
-├── 📁 10_promises/                   # ⏳ Coming soon
+├── 📁 09_API/
+│   ├── 01_API_intro.js               # API fundamentals, REST, HTTP methods, status codes, JSON
+│   └── 01_API_request.html           # XMLHttpRequest, readyState tracking, GitHub API, DOM rendering
+│
+├── 📁 10_promises/
+│   └── 01_promises.js                # Promise states, chaining, async/await, try/catch, fetch API, microtask vs callback queue
+│
 ├── 📁 11_fetch/                      # ⏳ Coming soon
 ├── 📁 12_OOP/                        # ⏳ Coming soon
 ├── 📁 13_prototype/                  # ⏳ Coming soon
@@ -135,9 +140,9 @@ JavaScript-Tutorials/
 | `06_DOM/` | **DOM** | 5 files | Selectors · Window vs Document · Tree navigation · Element creation & modification · Append vs replace performance | ✅ Complete |
 | `07_projects/` | **Projects** | 6 projects | Color Changer · BMI Calculator · Digital Clock · Guess the Number · Keyboard Check · Unlimited Colors | ✅ Complete |
 | `08_events/` | **Events & Async Foundations** | 4 files | `onclick` vs `addEventListener` · Event object · Bubbling & capturing · `stopPropagation` · `preventDefault` · Event delegation · Sync vs async model · Call stack · Web APIs · Callback queue · Microtask queue · Event loop · `setTimeout` · `setInterval` · `clearTimeout` · `clearInterval` | ✅ Complete |
-| `9_API/` | **APIs** | — | What is an API · REST basics · JSON · Working with real APIs | ⬜ Upcoming |
-| `10_promises/` | **Promises** | — | `Promise` constructor · `.then` `.catch` `.finally` · `Promise.all` `Promise.race` | ⬜ Upcoming |
-| `11_fetch/` | **Fetch** | — | `fetch()` · `async/await` · Error handling · Chaining requests | ⬜ Upcoming |
+| `09_API/` | **APIs** | 2 files | REST fundamentals · HTTP methods & status codes · JSON parsing · `XMLHttpRequest` · `readyState` tracking · GitHub API · Rendering API data to DOM | ✅ Complete |
+| `10_promises/` | **Promises** | 1 file | Promise states · `.then()` `.catch()` `.finally()` · Chaining · `async/await` · `try/catch` · `fetch()` · Microtask vs callback queue priority | ✅ Complete |
+| `11_fetch/` | **Fetch** | — | `fetch()` in depth · Request options · Headers · POST requests · Error handling patterns | ⬜ Upcoming |
 | `12_OOP/` | **OOP** | — | Classes · Constructor · Inheritance · `super` · `this` binding | ⬜ Upcoming |
 | `13_prototype/` | **Prototypes** | — | Prototype chain · `__proto__` · `Object.create` · Prototype vs class | ⬜ Upcoming |
 
