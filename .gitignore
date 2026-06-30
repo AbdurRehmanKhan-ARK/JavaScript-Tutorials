@@ -1,3 +1,6 @@
+# Editor settings
+.vscode/
+
 # Code Runner temporary files
 tempCodeRunnerFile.js
 
@@ -5,6 +8,13 @@ tempCodeRunnerFile.js
 node_modules/
 dist/
 
+# Environment secrets
+.env
+
+# Logs
+*.log
+
 # Operating system files
 .DS_Store
 Thumbs.db
+desktop.ini
