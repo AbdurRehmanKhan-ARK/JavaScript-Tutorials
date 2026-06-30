@@ -115,13 +115,19 @@ JavaScript-Tutorials/
 │
 ├── 📁 09_API/
 │   ├── 01_API_intro.js               # API fundamentals, REST, HTTP methods, status codes, JSON
-│   └── 01_API_request.html           # XMLHttpRequest, readyState tracking, GitHub API, DOM rendering
+│   ├── 01_API_request.html           # XMLHttpRequest, readyState tracking, GitHub API, DOM rendering
+│   └── 02_github_pfp_analyzer.html   # Mini project — search GitHub users and render profile card
 │
 ├── 📁 10_promises/
 │   └── 01_promises.js                # Promise states, chaining, async/await, try/catch, fetch API, microtask vs callback queue
 │
-├── 📁 11_fetch/                      # ⏳ Coming soon
-├── 📁 12_OOP/                        # ⏳ Coming soon
+├── 📁 11_fetch/
+│   └── fetch.js                      # fetch() fundamentals, Response object, 404 vs network error, response.ok pattern
+│
+├── 📁 12_OOP/
+│   ├── oop_intro.js                  # Object literals, 'this' keyword, this in global vs function context
+│   └── oop.js                        # Constructor functions, the 'new' keyword, instance creation
+│
 ├── 📁 13_prototype/                  # ⏳ Coming soon
 └── 📄 README.md
 ```
@@ -140,11 +146,11 @@ JavaScript-Tutorials/
 | `06_DOM/` | **DOM** | 5 files | Selectors · Window vs Document · Tree navigation · Element creation & modification · Append vs replace performance | ✅ Complete |
 | `07_projects/` | **Projects** | 6 projects | Color Changer · BMI Calculator · Digital Clock · Guess the Number · Keyboard Check · Unlimited Colors | ✅ Complete |
 | `08_events/` | **Events & Async Foundations** | 4 files | `onclick` vs `addEventListener` · Event object · Bubbling & capturing · `stopPropagation` · `preventDefault` · Event delegation · Sync vs async model · Call stack · Web APIs · Callback queue · Microtask queue · Event loop · `setTimeout` · `setInterval` · `clearTimeout` · `clearInterval` | ✅ Complete |
-| `09_API/` | **APIs** | 2 files | REST fundamentals · HTTP methods & status codes · JSON parsing · `XMLHttpRequest` · `readyState` tracking · GitHub API · Rendering API data to DOM | ✅ Complete |
+| `09_API/` | **APIs** | 3 files | REST fundamentals · HTTP methods & status codes · JSON parsing · `XMLHttpRequest` · `readyState` tracking · GitHub API · Rendering API data to DOM · Mini project — GitHub Profile Analyzer | ✅ Complete |
 | `10_promises/` | **Promises** | 1 file | Promise states · `.then()` `.catch()` `.finally()` · Chaining · `async/await` · `try/catch` · `fetch()` · Microtask vs callback queue priority | ✅ Complete |
-| `11_fetch/` | **Fetch** | — | `fetch()` in depth · Request options · Headers · POST requests · Error handling patterns | ⬜ Upcoming |
-| `12_OOP/` | **OOP** | — | Classes · Constructor · Inheritance · `super` · `this` binding | ⬜ Upcoming |
-| `13_prototype/` | **Prototypes** | — | Prototype chain · `__proto__` · `Object.create` · Prototype vs class | ⬜ Upcoming |
+| `11_fetch/` | **Fetch** | 1 file | `fetch()` fundamentals · Response object · `response.status` & `response.ok` · 404 vs true network error · `async/await` error handling | ✅ Complete |
+| `12_OOP/` | **OOP** | 2 files | Object literals · `this` keyword in object vs global context · Constructor functions · `new` keyword · Instance creation and the bug of forgetting `new` | ✅ Complete |
+| `13_prototype/` | **Prototypes** | — | Prototype chain · `__proto__` · `Object.create` · Prototype vs class · Inheritance · `super` | ⬜ Upcoming |
 
 ---
 
