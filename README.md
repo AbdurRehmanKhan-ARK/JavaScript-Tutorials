@@ -27,6 +27,16 @@ This repository documents a structured, file-per-concept approach to learning Ja
 
 ---
 
+## Why the Comments Matter
+
+Almost every file in this repository contains commented-out code alongside the working code - and that is intentional.
+
+Most of these mistakes were written first, run, broken on purpose, then left in as comments with an explanation of exactly why they failed - wrong selector syntax, missing the `new` keyword, forgetting `await`, confusing `this` context, and so on. The working fix sits right next to the wrong attempt.
+
+This means the repository isn't just a record of correct syntax - it is a record of *reasoning*. Reading any file end to end shows not only what the right answer is, but why the obvious wrong answer doesn't work, which is usually the part that actually sticks.
+
+---
+
 ## Structure
 
 ```
@@ -69,7 +79,7 @@ JavaScript-Tutorials/
 │
 ├── 📁 06_DOM/
 │   ├── 01_index.html                 # HTML baseline layout for basic selectors
-│   ├── 01_intro_to_dom.js            # Core DOM — window vs document & text extraction
+│   ├── 01_intro_to_dom.js            # Core DOM - window vs document & text extraction
 │   ├── 02_index.html                 # Parent-child tree node navigation
 │   ├── 03_index.html                 # Programmatic element generation & textNode mapping
 │   └── 04_index.html                 # DOM optimization, append vs replace elements
@@ -110,13 +120,13 @@ JavaScript-Tutorials/
 ├── 📁 08_events/
 │   ├── events.html                   # onclick vs addEventListener, event object, bubbling, capturing, stopPropagation, preventDefault, event delegation
 │   ├── async.js                      # sync vs async model, call stack, Web APIs, callback queue, microtask queue, event loop
-│   ├── 01_async_projects.html        # setTimeout and clearTimeout — stop button cancels pending timer
-│   └── 02_async_projects.html        # setInterval and clearInterval — start/stop buttons control repeated execution
+│   ├── 01_async_projects.html        # setTimeout and clearTimeout - stop button cancels pending timer
+│   └── 02_async_projects.html        # setInterval and clearInterval - start/stop buttons control repeated execution
 │
 ├── 📁 09_API/
 │   ├── 01_API_intro.js               # API fundamentals, REST, HTTP methods, status codes, JSON
 │   ├── 01_API_request.html           # XMLHttpRequest, readyState tracking, GitHub API, DOM rendering
-│   └── 02_github_pfp_analyzer.html   # Mini project — search GitHub users and render profile card
+│   └── 02_github_pfp_analyzer.html   # Mini project - search GitHub users and render profile card
 │
 ├── 📁 10_promises/
 │   └── 01_promises.js                # Promise states, chaining, async/await, try/catch, fetch API, microtask vs callback queue
@@ -128,9 +138,16 @@ JavaScript-Tutorials/
 │   ├── oop_intro.js                  # Object literals, 'this' keyword, this in global vs function context
 │   └── oop.js                        # Constructor functions, the 'new' keyword, instance creation
 │
-├── 📁 13_prototype/                 
-│   └── proto.js                      # prototype chain, new keyword internals, custom prototype methods, Object.setPrototypeOf, prototypal inheritance
+├── 📁 13_prototype/
+│   └── proto.js                      # Prototype chain, new keyword internals, custom prototype methods, Object.setPrototypeOf, prototypal inheritance
 │
+├── 📁 14_call_and_this/              # ⏳ Coming soon - call(), apply(), bind() and 'this' binding
+├── 📁 15_class_constructor/          # ⏳ Coming soon - class syntax, static methods, constructors
+├── 📁 16_bind/                       # ⏳ Coming soon - bind() in depth
+├── 📁 17_objects/                    # ⏳ Coming soon - advanced object patterns
+├── 📁 18_getters_setters/            # ⏳ Coming soon - getters, setters, stack overflow pitfalls
+├── 📁 19_closures/                   # ⏳ Coming soon - lexical scoping and closures
+├── 📁 20_array_internals/            # ⏳ Coming soon - packed vs holey arrays, V8 internals
 └── 📄 README.md
 ```
 
@@ -148,11 +165,18 @@ JavaScript-Tutorials/
 | `06_DOM/` | **DOM** | 5 files | Selectors · Window vs Document · Tree navigation · Element creation & modification · Append vs replace performance | ✅ Complete |
 | `07_projects/` | **Projects** | 6 projects | Color Changer · BMI Calculator · Digital Clock · Guess the Number · Keyboard Check · Unlimited Colors | ✅ Complete |
 | `08_events/` | **Events & Async Foundations** | 4 files | `onclick` vs `addEventListener` · Event object · Bubbling & capturing · `stopPropagation` · `preventDefault` · Event delegation · Sync vs async model · Call stack · Web APIs · Callback queue · Microtask queue · Event loop · `setTimeout` · `setInterval` · `clearTimeout` · `clearInterval` | ✅ Complete |
-| `09_API/` | **APIs** | 3 files | REST fundamentals · HTTP methods & status codes · JSON parsing · `XMLHttpRequest` · `readyState` tracking · GitHub API · Rendering API data to DOM · Mini project — GitHub Profile Analyzer | ✅ Complete |
+| `09_API/` | **APIs** | 3 files | REST fundamentals · HTTP methods & status codes · JSON parsing · `XMLHttpRequest` · `readyState` tracking · GitHub API · Rendering API data to DOM · Mini project - GitHub Profile Analyzer | ✅ Complete |
 | `10_promises/` | **Promises** | 1 file | Promise states · `.then()` `.catch()` `.finally()` · Chaining · `async/await` · `try/catch` · `fetch()` · Microtask vs callback queue priority | ✅ Complete |
 | `11_fetch/` | **Fetch** | 1 file | `fetch()` fundamentals · Response object · `response.status` & `response.ok` · 404 vs true network error · `async/await` error handling | ✅ Complete |
 | `12_OOP/` | **OOP** | 2 files | Object literals · `this` keyword in object vs global context · Constructor functions · `new` keyword · Instance creation and the bug of forgetting `new` | ✅ Complete |
-| `13_prototype/` | **Prototypes** | 1 file | prototype chain · new keyword internals · custom prototype methods · Object.setPrototypeOf · prototypal inheritance | ✅ Complete |
+| `13_prototype/` | **Prototypes** | 1 file | Prototype chain · `new` keyword internals · Custom prototype methods · `Object.setPrototypeOf` · Prototypal inheritance | ✅ Complete |
+| `14_call_and_this/` | **Call & this** | - | `call()` · `apply()` · `this` binding across contexts · Borrowing methods between objects | ⬜ Upcoming |
+| `15_class_constructor/` | **Classes** | - | `class` syntax · Constructors · Static methods and properties | ⬜ Upcoming |
+| `16_bind/` | **Bind** | - | `bind()` in depth · Permanently binding `this` · Partial application | ⬜ Upcoming |
+| `17_objects/` | **Objects (Advanced)** | - | Deeper object patterns and real-world object design | ⬜ Upcoming |
+| `18_getters_setters/` | **Getters & Setters** | - | `get` / `set` syntax · Computed properties · Stack overflow pitfalls with recursive setters | ⬜ Upcoming |
+| `19_closures/` | **Closures** | - | Lexical scoping · Closures · Practical closure use cases | ⬜ Upcoming |
+| `20_array_internals/` | **Array Internals** | - | Packed vs holey arrays · V8 engine internals · Performance implications | ⬜ Upcoming |
 
 ---
 
