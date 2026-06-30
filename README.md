@@ -128,7 +128,9 @@ JavaScript-Tutorials/
 │   ├── oop_intro.js                  # Object literals, 'this' keyword, this in global vs function context
 │   └── oop.js                        # Constructor functions, the 'new' keyword, instance creation
 │
-├── 📁 13_prototype/                  # ⏳ Coming soon
+├── 📁 13_prototype/                 
+│   └── proto.js                      # prototype chain, new keyword internals, custom prototype methods, Object.setPrototypeOf, prototypal inheritance
+│
 └── 📄 README.md
 ```
 
