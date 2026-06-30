@@ -74,4 +74,4 @@
 //   .then(response => response.json())
 //   .then(data => console.log(data.public_repos))
 
-// This will be covered in detail in 12_fetch/
+// This will be covered in detail in 11_fetch/
