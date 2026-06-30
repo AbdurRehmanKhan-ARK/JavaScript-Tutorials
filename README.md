@@ -150,7 +150,7 @@ JavaScript-Tutorials/
 | `10_promises/` | **Promises** | 1 file | Promise states · `.then()` `.catch()` `.finally()` · Chaining · `async/await` · `try/catch` · `fetch()` · Microtask vs callback queue priority | ✅ Complete |
 | `11_fetch/` | **Fetch** | 1 file | `fetch()` fundamentals · Response object · `response.status` & `response.ok` · 404 vs true network error · `async/await` error handling | ✅ Complete |
 | `12_OOP/` | **OOP** | 2 files | Object literals · `this` keyword in object vs global context · Constructor functions · `new` keyword · Instance creation and the bug of forgetting `new` | ✅ Complete |
-| `13_prototype/` | **Prototypes** | — | Prototype chain · `__proto__` · `Object.create` · Prototype vs class · Inheritance · `super` | ⬜ Upcoming |
+| `13_prototype/` | **Prototypes** | 1 file | prototype chain · new keyword internals · custom prototype methods · Object.setPrototypeOf · prototypal inheritance | ✅ Complete |
 
 ---
 
