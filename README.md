@@ -141,13 +141,19 @@ JavaScript-Tutorials/
 ├── 📁 13_prototype/
 │   └── proto.js                      # Prototype chain, new keyword internals, custom prototype methods, Object.setPrototypeOf, prototypal inheritance
 │
-├── 📁 14_call_and_this/              # ⏳ Coming soon - call(), apply(), bind() and 'this' binding
-├── 📁 15_class_constructor/          # ⏳ Coming soon - class syntax, static methods, constructors
-├── 📁 16_bind/                       # ⏳ Coming soon - bind() in depth
-├── 📁 17_objects/                    # ⏳ Coming soon - advanced object patterns
-├── 📁 18_getters_setters/            # ⏳ Coming soon - getters, setters, stack overflow pitfalls
-├── 📁 19_closures/                   # ⏳ Coming soon - lexical scoping and closures
-├── 📁 20_array_internals/            # ⏳ Coming soon - packed vs holey arrays, V8 internals
+├── 📁 14_call_and_this/
+│   └── call.js                       # call(), apply(), bind() — this injection across function scopes
+│
+├── 📁 15_class_constructor/
+│   ├── classes.js                    # ES6 class syntax vs prototype under the hood
+│   ├── inheritance.js                # extends, super, instanceof chain, method overriding
+│   └── static.js                     # static methods and properties, class vs instance access
+│
+├── 📁 16_bind/                       # ⏳ Coming soon — bind() in depth
+├── 📁 17_objects/                    # ⏳ Coming soon — advanced object patterns
+├── 📁 18_getters_setters/            # ⏳ Coming soon — getters, setters, stack overflow pitfalls
+├── 📁 19_closures/                   # ⏳ Coming soon — lexical scoping and closures
+├── 📁 20_array_internals/            # ⏳ Coming soon — packed vs holey arrays, V8 internals
 └── 📄 README.md
 ```
 
@@ -170,13 +176,13 @@ JavaScript-Tutorials/
 | `11_fetch/` | **Fetch** | 1 file | `fetch()` fundamentals · Response object · `response.status` & `response.ok` · 404 vs true network error · `async/await` error handling | ✅ Complete |
 | `12_OOP/` | **OOP** | 2 files | Object literals · `this` keyword in object vs global context · Constructor functions · `new` keyword · Instance creation and the bug of forgetting `new` | ✅ Complete |
 | `13_prototype/` | **Prototypes** | 1 file | Prototype chain · `new` keyword internals · Custom prototype methods · `Object.setPrototypeOf` · Prototypal inheritance | ✅ Complete |
-| `14_call_and_this/` | **Call & this** | - | `call()` · `apply()` · `this` binding across contexts · Borrowing methods between objects | ⬜ Upcoming |
-| `15_class_constructor/` | **Classes** | - | `class` syntax · Constructors · Static methods and properties | ⬜ Upcoming |
-| `16_bind/` | **Bind** | - | `bind()` in depth · Permanently binding `this` · Partial application | ⬜ Upcoming |
-| `17_objects/` | **Objects (Advanced)** | - | Deeper object patterns and real-world object design | ⬜ Upcoming |
-| `18_getters_setters/` | **Getters & Setters** | - | `get` / `set` syntax · Computed properties · Stack overflow pitfalls with recursive setters | ⬜ Upcoming |
-| `19_closures/` | **Closures** | - | Lexical scoping · Closures · Practical closure use cases | ⬜ Upcoming |
-| `20_array_internals/` | **Array Internals** | - | Packed vs holey arrays · V8 engine internals · Performance implications | ⬜ Upcoming |
+| `14_call_and_this/` | **Call & this** | 1 file | `call()` · `apply()` · `bind()` · `this` injection across function scopes · Borrowing methods between objects | ✅ Complete |
+| `15_class_constructor/` | **Classes** | 3 files | ES6 `class` syntax vs prototype under the hood · `extends` · `super` · `instanceof` chain · Method overriding · `static` methods and properties · Class vs instance access | ✅ Complete |
+| `16_bind/` | **Bind** | — | `bind()` in depth · Permanently binding `this` · Partial application | ⬜ Upcoming |
+| `17_objects/` | **Objects (Advanced)** | — | Deeper object patterns and real-world object design | ⬜ Upcoming |
+| `18_getters_setters/` | **Getters & Setters** | — | `get` / `set` syntax · Computed properties · Stack overflow pitfalls with recursive setters | ⬜ Upcoming |
+| `19_closures/` | **Closures** | — | Lexical scoping · Closures · Practical closure use cases | ⬜ Upcoming |
+| `20_array_internals/` | **Array Internals** | — | Packed vs holey arrays · V8 engine internals · Performance implications | ⬜ Upcoming |
 
 ---
 
@@ -244,6 +250,8 @@ abdurrehmankhan0909@gmail.com · [GitHub](https://github.com/AbdurRehmanKhan-ARK
 
 <div align="center">
 
+**If this repository helped you understand a concept or saved you time, consider leaving a ⭐ , it genuinely means a lot.**
+<br/>
 _Built in public. Imperfect by design. Improving every commit._
 
 </div>
