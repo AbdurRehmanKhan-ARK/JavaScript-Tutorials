@@ -149,7 +149,9 @@ JavaScript-Tutorials/
 │   ├── inheritance.js                # extends, super, instanceof chain, method overriding
 │   └── static.js                     # static methods and properties, class vs instance access
 │
-├── 📁 16_bind/                       # ⏳ Coming soon — bind() in depth
+├── 📁 16_bind/
+│   └── bind.js                       #   # bind() to preserve class instance context in DOM event listeners
+│                  
 ├── 📁 17_objects/                    # ⏳ Coming soon — advanced object patterns
 ├── 📁 18_getters_setters/            # ⏳ Coming soon — getters, setters, stack overflow pitfalls
 ├── 📁 19_closures/                   # ⏳ Coming soon — lexical scoping and closures
