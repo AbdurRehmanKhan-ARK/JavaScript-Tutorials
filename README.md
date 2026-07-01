@@ -63,7 +63,7 @@ JavaScript-Tutorials/
 ├── 📁 03_functions/
 │   ├── 01_functions_fundamentals.js  # declarations, expressions, parameters
 │   ├── 02_scopes.js                  # global, function, block scope
-│   ├── 03_scopes_and_hoisting.js     # hoisting, temporal dead zone
+│   ├── 03_scopes_and_hoisting.js     # hoisting, temporal dead zone, closure and lexical scoping
 │   ├── 04_arrow_func.js              # arrow functions, implicit return, this
 │   ├── 05_iife.js                    # immediately invoked function expressions
 │   └── 06_execution_in_javaScript.js # execution context, call stack
@@ -149,8 +149,12 @@ JavaScript-Tutorials/
 │   ├── inheritance.js                # extends, super, instanceof chain, method overriding
 │   └── static.js                     # static methods and properties, class vs instance access
 │
-├── 📁 16_bind/                       # ⏳ Coming soon — bind() in depth
-├── 📁 17_objects/                    # ⏳ Coming soon — advanced object patterns
+├── 📁 16_bind/
+│   └── bind.js                       # bind() to preserve class instance context in DOM event listeners
+│                  
+├── 📁 17_objects_advanced/
+│   └── objects.js                    # check Math.PI property descriptors and object defineProperty configurations
+│
 ├── 📁 18_getters_setters/            # ⏳ Coming soon — getters, setters, stack overflow pitfalls
 ├── 📁 19_closures/                   # ⏳ Coming soon — lexical scoping and closures
 ├── 📁 20_array_internals/            # ⏳ Coming soon — packed vs holey arrays, V8 internals
@@ -165,7 +169,7 @@ JavaScript-Tutorials/
 |--------|--------|-------|-----------------|--------|
 | `01_primitives_and_operators/` | **Primitives & Operators** | 10 files | `var` `let` `const` · Primitives & `typeof` · Type conversion & coercion · Arithmetic operators · Strict vs loose equality · Symbols & BigInt · Stack vs heap · String methods · Number & Math · Date objects | ✅ Complete |
 | `02_data_structures/` | **Data Structures** | 4 files | Arrays - `push` `pop` `slice` `splice` · `map` `filter` `reduce` `concat` spread · Object literals · dot & bracket notation · `Object.keys()` `assign` · Destructuring | ✅ Complete |
-| `03_functions/` | **Functions** | 6 files | Declarations vs expressions · Scope · Hoisting & TDZ · Arrow functions · IIFE · Execution context & call stack | ✅ Complete |
+| `03_functions/` | **Functions** | 6 files | Declarations vs expressions · Scope (closure and lexical scoping) · Hoisting & TDZ · Arrow functions · IIFE · Execution context & call stack | ✅ Complete |
 | `04_control_flow/` | **Control Flow** | 2 files | if/else · switch · Ternary · Truthy & falsy · Nullish coalescing | ✅ Complete |
 | `05_iterations/` | **Iterations** | 3 files | `for` `while` `do-while` · `for...of` `for...in` · `forEach` · `map` `filter` `reduce` `every` `some` | ✅ Complete |
 | `06_DOM/` | **DOM** | 5 files | Selectors · Window vs Document · Tree navigation · Element creation & modification · Append vs replace performance | ✅ Complete |
