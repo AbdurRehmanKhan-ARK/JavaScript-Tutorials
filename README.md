@@ -158,7 +158,9 @@ JavaScript-Tutorials/
 ├── 📁 18_getters_setters/            
 │   └── getSet.js                     # complete class constructor old function pattern and object literal accessors log
 │
-├── 📁 19_closures/                   # ⏳ Coming soon — lexical scoping and closures
+├── 📁 19_closure_adv/
+|    └── closure.js                   #  lexical scoping boundaries and closure memory lifecycle constraints        
+|
 ├── 📁 20_array_internals/            # ⏳ Coming soon — packed vs holey arrays, V8 internals
 └── 📄 README.md
 ```
@@ -187,7 +189,7 @@ JavaScript-Tutorials/
 | `16_bind/` | **Bind** | 1 file | `bind()` in depth · Permanently binding `this` · Partial application | ✅ Complete |
 | `17_objects/` | **Objects (Advanced)** | 1 file | Deeper object patterns and real-world object design | ✅ Complete |
 | `18_getters_setters/` | **Getters & Setters** | 1 file | `get` / `set` syntax · Computed properties · Stack overflow pitfalls with recursive setters | ✅ Complete |
-| `19_closures_advanced/` | **Closure and Lexical Scoping** | 1 file | Lexical scoping · Closures · Practical closure use cases | ✅ Complete |
+| `19_closures_adv/` | **Closure and Lexical Scoping** | 1 file | Lexical scoping · Closures · Practical closure use cases | ✅ Complete |
 | `20_array_internals/` | **Array Internals** | — | Packed vs holey arrays · V8 engine internals · Performance implications | ⬜ Upcoming |
 
 ---
