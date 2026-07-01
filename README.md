@@ -184,10 +184,10 @@ JavaScript-Tutorials/
 | `13_prototype/` | **Prototypes** | 1 file | Prototype chain · `new` keyword internals · Custom prototype methods · `Object.setPrototypeOf` · Prototypal inheritance | ✅ Complete |
 | `14_call_and_this/` | **Call & this** | 1 file | `call()` · `apply()` · `bind()` · `this` injection across function scopes · Borrowing methods between objects | ✅ Complete |
 | `15_class_constructor/` | **Classes** | 3 files | ES6 `class` syntax vs prototype under the hood · `extends` · `super` · `instanceof` chain · Method overriding · `static` methods and properties · Class vs instance access | ✅ Complete |
-| `16_bind/` | **Bind** | — | `bind()` in depth · Permanently binding `this` · Partial application | ✅ Complete |
-| `17_objects/` | **Objects (Advanced)** | — | Deeper object patterns and real-world object design | ✅ Complete |
-| `18_getters_setters/` | **Getters & Setters** | — | `get` / `set` syntax · Computed properties · Stack overflow pitfalls with recursive setters | ✅ Complete |
-| `19_closures/` | **Closures** | — | Lexical scoping · Closures · Practical closure use cases | ⬜ Upcoming |
+| `16_bind/` | **Bind** | 1 file | `bind()` in depth · Permanently binding `this` · Partial application | ✅ Complete |
+| `17_objects/` | **Objects (Advanced)** | 1 file | Deeper object patterns and real-world object design | ✅ Complete |
+| `18_getters_setters/` | **Getters & Setters** | 1 file | `get` / `set` syntax · Computed properties · Stack overflow pitfalls with recursive setters | ✅ Complete |
+| `19_closures_advanced/` | **Closure and Lexical Scoping** | 1 file | Lexical scoping · Closures · Practical closure use cases | ✅ Complete |
 | `20_array_internals/` | **Array Internals** | — | Packed vs holey arrays · V8 engine internals · Performance implications | ⬜ Upcoming |
 
 ---
