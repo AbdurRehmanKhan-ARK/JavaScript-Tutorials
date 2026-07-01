@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bind</title>
+</head>
+<body>
+    <button>Button Clicked</button>
+</body>
+<script>
+    // PROBLEM:
+    // When an event listener fires, 'this' points to the element the event occurred on
+    // — in this case the button, not the React class instance
+    // So without bind, this.server would be undefined
+
+    class React {
+        constructor(){
+            this.library = "React"
+            this.server = "http://localhost:3000"
+
+            // .bind(this) — what does it do?
+            // Permanently ties handleClick() to this class instance
+            // So no matter where or how handleClick is called,
+            // 'this' will always refer to the React instance, not the button
+            document.querySelector("button").addEventListener("click", this.handleClick.bind(this))
+
+            // Without bind:
+            // document.querySelector("button").addEventListener("click", this.handleClick)
+            // => handleClick runs, but 'this' = button element
+            // => this.server = undefined (button has no .server property)
+        }
+
+        handleClick(){
+            console.log("Button Clicked")
+            console.log(this)
+            console.log(this.server) // "http://localhost:3000" — correct, because of bind
+        }
+    }
+
+    // Must instantiate the class — this runs the constructor
+    // which attaches the event listener to the button
+    const app = new React()
+
+    // TRICK to remember the difference:
+    // .bind(this)  => returns a NEW function with 'this' permanently set — call it later
+    // .call(this)  => invokes the function immediately with 'this' injected
+    // .apply(this) => same as call, but arguments passed as an array
+    // bind = "I want to set 'this' now, but run the function later"
+</script>
+</html>
