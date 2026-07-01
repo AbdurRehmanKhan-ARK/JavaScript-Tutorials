@@ -150,9 +150,11 @@ JavaScript-Tutorials/
 │   └── static.js                     # static methods and properties, class vs instance access
 │
 ├── 📁 16_bind/
-│   └── bind.js                       #   # bind() to preserve class instance context in DOM event listeners
+│   └── bind.js                       # bind() to preserve class instance context in DOM event listeners
 │                  
-├── 📁 17_objects/                    # ⏳ Coming soon — advanced object patterns
+├── 📁 17_objects_advanced/
+│   └── objects.js                    # check Math.PI property descriptors and object defineProperty configurations
+│
 ├── 📁 18_getters_setters/            # ⏳ Coming soon — getters, setters, stack overflow pitfalls
 ├── 📁 19_closures/                   # ⏳ Coming soon — lexical scoping and closures
 ├── 📁 20_array_internals/            # ⏳ Coming soon — packed vs holey arrays, V8 internals
