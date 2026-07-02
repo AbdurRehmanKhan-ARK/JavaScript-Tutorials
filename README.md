@@ -192,7 +192,7 @@ JavaScript-Tutorials/
 | `17_objects/` | **Objects (Advanced)** | 1 file | Deeper object patterns and real-world object design | ✅ Complete |
 | `18_getters_setters/` | **Getters & Setters** | 1 file | `get` / `set` syntax · Computed properties · Stack overflow pitfalls with recursive setters | ✅ Complete |
 | `19_closures_adv/` | **Closure and Lexical Scoping** | 1 file | Lexical scoping · Closures · Practical closure use cases | ✅ Complete |
-| `20_array_internals/` | **Array Internals** | — | Packed vs holey arrays · V8 engine internals · Performance implications | ✅ Complete |
+| `20_array_internals/` | **Array Internals** | 1 | Packed vs holey arrays · V8 engine internals · Performance implications | ✅ Complete |
 ---
 
 ## How to Run
