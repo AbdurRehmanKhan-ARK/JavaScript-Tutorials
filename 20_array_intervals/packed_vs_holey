@@ -1,0 +1,142 @@
+//   JavaScript Arrays - PACKED vs HOLEY (V8 Engine Internals)
+//   Topic: "You don't know arrays in JavaScript" - JSVU / V8-debug
+
+// V8 (Chrome/Node's JavaScript engine) optimizes arrays internally based on their elements' type.
+// The more optimized the array, the faster the performance.
+
+// HIERARCHY (Most Optimized -> Least Optimized)
+//
+//   PACKED_SMI_ELEMENTS       ->  Best  (only small integers, no gaps)
+//   PACKED_DOUBLE_ELEMENTS    ->        (only numbers/doubles, no gaps)
+//   PACKED_ELEMENTS           ->        (any value, no gaps)
+//   HOLEY_SMI_ELEMENTS        ->        (only integers, WITH gaps)
+//   HOLEY_DOUBLE_ELEMENTS     ->        (only doubles, WITH gaps)
+//   HOLEY_ELEMENTS            ->  Worst (any value, WITH gaps)
+//
+// IMPORTANT RULE: Once an array is downgraded to HOLEY, it will never be upgraded
+// back to PACKED — even if all holes are filled later. V8 keeps the HOLEY stamp forever.
+
+// EXAMPLE 1 — PACKED_SMI_ELEMENTS (Best case)
+
+const arrOne = [1, 2, 3];
+// All integers (SMI = Small Integer), no gaps.
+// V8 internally: PACKED_SMI_ELEMENTS (fastest)
+
+console.log(arrOne); // [1, 2, 3]
+
+// EXAMPLE 2 — PACKED_SMI -> PACKED_DOUBLE (downgrade)
+
+const arrTwo = [1, 2, 3];
+// Currently: PACKED_SMI_ELEMENTS
+
+arrTwo.push(4.5);
+// 4.5 is a float/double, not an SMI.
+// V8 downgrades the entire array:
+// PACKED_SMI_ELEMENTS -> PACKED_DOUBLE_ELEMENTS
+
+console.log(arrTwo); // [1, 2, 3, 4.5]
+
+// EXAMPLE 3 — PACKED_DOUBLE -> PACKED_ELEMENTS (downgrade)
+
+const arrThree = [1, 2, 3, 4.5];
+// Currently: PACKED_DOUBLE_ELEMENTS
+
+arrThree.push("hello");
+// A string was pushed — the array is no longer exclusively numbers.
+// V8: PACKED_DOUBLE_ELEMENTS -> PACKED_ELEMENTS
+
+console.log(arrThree); // [1, 2, 3, 4.5, 'hello']
+
+// EXAMPLE 4 — new Array(n) creates a HOLEY array immediately
+
+const arrFour = new Array(3);
+// new Array(3) means: reserve 3 EMPTY HOLES.
+// No values provided yet, only size declared.
+// V8 internally: HOLEY_SMI_ELEMENTS — already downgraded on creation.
+
+arrFour[0] = "1"; // HOLEY_ELEMENTS (string assigned, holey stamp already applied)
+arrFour[1] = "2"; // HOLEY_ELEMENTS
+arrFour[2] = "3"; // HOLEY_ELEMENTS
+
+// Note: the array now has no remaining holes — all slots are filled.
+// However, V8 applied the HOLEY stamp at creation and it never gets removed.
+// The array will NOT be upgraded back to PACKED.
+
+console.log(arrFour); // ['1', '2', '3']
+// Looks identical to a PACKED array but internally: HOLEY_ELEMENTS (slow)
+
+// EXAMPLE 5 — [] + push stays PACKED
+
+const arrFive = [];
+// Empty array literal — V8 starts with PACKED_SMI_ELEMENTS.
+
+arrFive.push("1"); // PACKED_ELEMENTS (string caused downgrade from SMI, but still PACKED)
+arrFive.push("2"); // PACKED_ELEMENTS
+arrFive.push("3"); // PACKED_ELEMENTS
+
+// No holes were ever created, so the array remains PACKED.
+// Much better performance than new Array(3). [if you added arr.push(NaN) or arr.push(undefined), it would have been HOLEY_ELEMENTS then]
+
+console.log(arrFive); // ['1', '2', '3']
+// Internally: PACKED_ELEMENTS (fast)
+
+// EXAMPLE 6 — How holes are created
+
+const arrSix = [1, 2, 3];
+// Currently: PACKED_SMI_ELEMENTS
+
+arrSix[10] = 99;
+// Indices 3 through 9 have no assigned value — these are holes.
+// V8: PACKED_SMI -> HOLEY_SMI_ELEMENTS
+
+console.log(arrSix); // [1, 2, 3, empty x 7, 99]
+console.log(arrSix[5]); // undefined (hole)
+console.log(arrSix.length); // 11
+
+// EXAMPLE 7 — delete also creates a hole
+
+const arrSeven = [1, 2, 3, 4, 5];
+// Currently: PACKED_SMI_ELEMENTS
+
+delete arrSeven[2];
+// Index 2 is now a hole.
+// V8: HOLEY_SMI_ELEMENTS
+
+console.log(arrSeven); // [1, 2, empty, 4, 5]
+console.log(arrSeven[2]); // undefined
+
+// To remove an element without creating a hole, use splice instead of delete:
+// arrSeven.splice(2, 1) -> [1, 2, 4, 5]  stays PACKED
+
+// REAL WORLD IMPACT — Why does this matter?
+
+// For every element access in a HOLEY array, V8 must perform additional checks:
+//   1. Is the index within the array bounds?
+//   2. Is there a hole at this index?
+//   3. Does the prototype chain provide a value for this index?
+// These extra checks slow down iteration — especially forEach, map, filter, reduce.
+
+// In PACKED arrays, none of these checks are needed. V8 accesses the value directly.
+
+// BEST PRACTICES — Summary
+
+// BAD — using new Array(n)
+const bad = new Array(100); // Immediately HOLEY
+
+// GOOD — start with [], use push
+const good = [];
+for (let i = 0; i < 100; i++) good.push(i); // Stays PACKED
+
+// BAD — using delete to remove an element
+const arr = [1, 2, 3];
+delete arr[1]; // Creates a hole -> HOLEY
+
+// GOOD — use splice instead
+const arr2 = [1, 2, 3];
+arr2.splice(1, 1); // [1, 3] -> Stays PACKED
+
+// BAD — leaving gaps in an array literal
+const sparse = [1, , , 4]; // Holes in the middle -> HOLEY
+
+// GOOD — provide all values
+const dense = [1, 2, 3, 4]; // PACKED
