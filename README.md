@@ -142,7 +142,7 @@ JavaScript-Tutorials/
 │   └── proto.js                      # Prototype chain, new keyword internals, custom prototype methods, Object.setPrototypeOf, prototypal inheritance
 │
 ├── 📁 14_call_and_this/
-│   └── call.js                       # call(), apply(), bind() — this injection across function scopes
+│   └── call.js                       # call(), apply(), bind() - this injection across function scopes
 │
 ├── 📁 15_class_constructor/
 │   ├── classes.js                    # ES6 class syntax vs prototype under the hood
@@ -151,19 +151,19 @@ JavaScript-Tutorials/
 │
 ├── 📁 16_bind/
 │   └── bind.js                       # bind() to preserve class instance context in DOM event listeners
-│                  
+│
 ├── 📁 17_objects_advanced/
 │   └── objects.js                    # check Math.PI property descriptors and object defineProperty configurations
 │
-├── 📁 18_getters_setters/            
+├── 📁 18_getters_setters/
 │   └── getSet.js                     # complete class constructor old function pattern and object literal accessors log
 │
 ├── 📁 19_closure_adv/
-|    └── closure.js                   # lexical scoping boundaries and closure memory lifecycle constraints
-|
-├── 📁 20_array_internals/            
-|    └── packed_vs_holey.js           # packed vs holey arrays, V8 optimization hierarchy, performance implications
-|
+│   └── closure.js                    # lexical scoping boundaries and closure memory lifecycle constraints
+│
+├── 📁 20_array_internals/
+│   └── packed_vs_holey.js            # packed vs holey arrays, V8 optimization hierarchy, performance implications
+│
 └── 📄 README.md
 ```
 
@@ -172,30 +172,32 @@ JavaScript-Tutorials/
 ## Topics Roadmap
 
 | Folder | Module | Files | Concepts Covered | Status |
-|--------|--------|-------|-----------------|--------|
-| `01_primitives_and_operators/` | **Primitives & Operators** | 10 files | `var` `let` `const` · Primitives & `typeof` · Type conversion & coercion · Arithmetic operators · Strict vs loose equality · Symbols & BigInt · Stack vs heap · String methods · Number & Math · Date objects | ✅ Complete |
-| `02_data_structures/` | **Data Structures** | 4 files | Arrays - `push` `pop` `slice` `splice` · `map` `filter` `reduce` `concat` spread · Object literals · dot & bracket notation · `Object.keys()` `assign` · Destructuring | ✅ Complete |
-| `03_functions/` | **Functions** | 6 files | Declarations vs expressions · Scope (closure and lexical scoping) · Hoisting & TDZ · Arrow functions · IIFE · Execution context & call stack | ✅ Complete |
-| `04_control_flow/` | **Control Flow** | 2 files | if/else · switch · Ternary · Truthy & falsy · Nullish coalescing | ✅ Complete |
-| `05_iterations/` | **Iterations** | 3 files | `for` `while` `do-while` · `for...of` `for...in` · `forEach` · `map` `filter` `reduce` `every` `some` | ✅ Complete |
-| `06_DOM/` | **DOM** | 5 files | Selectors · Window vs Document · Tree navigation · Element creation & modification · Append vs replace performance | ✅ Complete |
-| `07_projects/` | **Projects** | 6 projects | Color Changer · BMI Calculator · Digital Clock · Guess the Number · Keyboard Check · Unlimited Colors | ✅ Complete |
-| `08_events/` | **Events & Async Foundations** | 4 files | `onclick` vs `addEventListener` · Event object · Bubbling & capturing · `stopPropagation` · `preventDefault` · Event delegation · Sync vs async model · Call stack · Web APIs · Callback queue · Microtask queue · Event loop · `setTimeout` · `setInterval` · `clearTimeout` · `clearInterval` | ✅ Complete |
-| `09_API/` | **APIs** | 3 files | REST fundamentals · HTTP methods & status codes · JSON parsing · `XMLHttpRequest` · `readyState` tracking · GitHub API · Rendering API data to DOM · Mini project - GitHub Profile Analyzer | ✅ Complete |
-| `10_promises/` | **Promises** | 1 file | Promise states · `.then()` `.catch()` `.finally()` · Chaining · `async/await` · `try/catch` · `fetch()` · Microtask vs callback queue priority | ✅ Complete |
-| `11_fetch/` | **Fetch** | 1 file | `fetch()` fundamentals · Response object · `response.status` & `response.ok` · 404 vs true network error · `async/await` error handling | ✅ Complete |
-| `12_OOP/` | **OOP** | 2 files | Object literals · `this` keyword in object vs global context · Constructor functions · `new` keyword · Instance creation and the bug of forgetting `new` | ✅ Complete |
-| `13_prototype/` | **Prototypes** | 1 file | Prototype chain · `new` keyword internals · Custom prototype methods · `Object.setPrototypeOf` · Prototypal inheritance | ✅ Complete |
-| `14_call_and_this/` | **Call & this** | 1 file | `call()` · `apply()` · `bind()` · `this` injection across function scopes · Borrowing methods between objects | ✅ Complete |
-| `15_class_constructor/` | **Classes** | 3 files | ES6 `class` syntax vs prototype under the hood · `extends` · `super` · `instanceof` chain · Method overriding · `static` methods and properties · Class vs instance access | ✅ Complete |
-| `16_bind/` | **Bind** | 1 file | `bind()` in depth · Permanently binding `this` · Partial application | ✅ Complete |
-| `17_objects/` | **Objects (Advanced)** | 1 file | Deeper object patterns and real-world object design | ✅ Complete |
-| `18_getters_setters/` | **Getters & Setters** | 1 file | `get` / `set` syntax · Computed properties · Stack overflow pitfalls with recursive setters | ✅ Complete |
-| `19_closures_adv/` | **Closure and Lexical Scoping** | 1 file | Lexical scoping · Closures · Practical closure use cases | ✅ Complete |
+|--------|--------|------:|-----------------|--------|
+| `01_primitives_and_operators/` | **Primitives & Operators** | 10 | `var` `let` `const` · Primitives & `typeof` · Type conversion & coercion · Arithmetic operators · Strict vs loose equality · Symbols & BigInt · Stack vs heap · String methods · Number & Math · Date objects | ✅ Complete |
+| `02_data_structures/` | **Data Structures** | 4 | Arrays - `push` `pop` `slice` `splice` · `map` `filter` `reduce` `concat` spread · Object literals · dot & bracket notation · `Object.keys()` `assign` · Destructuring | ✅ Complete |
+| `03_functions/` | **Functions** | 6 | Declarations vs expressions · Scope (closure and lexical scoping) · Hoisting & TDZ · Arrow functions · IIFE · Execution context & call stack | ✅ Complete |
+| `04_control_flow/` | **Control Flow** | 2 | if/else · switch · Ternary · Truthy & falsy · Nullish coalescing | ✅ Complete |
+| `05_iterations/` | **Iterations** | 3 | `for` `while` `do-while` · `for...of` `for...in` · `forEach` · `map` `filter` `reduce` `every` `some` | ✅ Complete |
+| `06_DOM/` | **DOM** | 5 | Selectors · Window vs Document · Tree navigation · Element creation & modification · Append vs replace performance | ✅ Complete |
+| `07_projects/` | **Projects** | 19 | Color Changer · BMI Calculator · Digital Clock · Guess the Number · Keyboard Check · Unlimited Colors | ✅ Complete |
+| `08_events/` | **Events & Async Foundations** | 4 | `onclick` vs `addEventListener` · Event object · Bubbling & capturing · `stopPropagation` · `preventDefault` · Event delegation · Sync vs async model · Call stack · Web APIs · Callback queue · Microtask queue · Event loop · `setTimeout` · `setInterval` · `clearTimeout` · `clearInterval` | ✅ Complete |
+| `09_API/` | **APIs** | 3 | REST fundamentals · HTTP methods & status codes · JSON parsing · `XMLHttpRequest` · `readyState` tracking · GitHub API · Rendering API data to DOM · Mini project - GitHub Profile Analyzer | ✅ Complete |
+| `10_promises/` | **Promises** | 1 | Promise states · `.then()` `.catch()` `.finally()` · Chaining · `async/await` · `try/catch` · `fetch()` · Microtask vs callback queue priority | ✅ Complete |
+| `11_fetch/` | **Fetch** | 1 | `fetch()` fundamentals · Response object · `response.status` & `response.ok` · 404 vs true network error · `async/await` error handling | ✅ Complete |
+| `12_OOP/` | **OOP** | 2 | Object literals · `this` keyword in object vs global context · Constructor functions · `new` keyword · Instance creation and the bug of forgetting `new` | ✅ Complete |
+| `13_prototype/` | **Prototypes** | 1 | Prototype chain · `new` keyword internals · Custom prototype methods · `Object.setPrototypeOf` · Prototypal inheritance | ✅ Complete |
+| `14_call_and_this/` | **Call & this** | 1 | `call()` · `apply()` · `bind()` · `this` injection across function scopes · Borrowing methods between objects | ✅ Complete |
+| `15_class_constructor/` | **Classes** | 3 | ES6 `class` syntax vs prototype under the hood · `extends` · `super` · `instanceof` chain · Method overriding · `static` methods and properties · Class vs instance access | ✅ Complete |
+| `16_bind/` | **Bind** | 1 | `bind()` in depth · Permanently binding `this` · Partial application | ✅ Complete |
+| `17_objects_advanced/` | **Objects (Advanced)** | 1 | Property descriptors · `Object.defineProperty` · `writable` `enumerable` `configurable` | ✅ Complete |
+| `18_getters_setters/` | **Getters & Setters** | 1 | `get` / `set` syntax · Computed properties · Stack overflow pitfalls with recursive setters | ✅ Complete |
+| `19_closure_adv/` | **Closures** | 1 | Lexical scoping · Closures · Practical closure use cases | ✅ Complete |
 | `20_array_internals/` | **Array Internals** | 1 | Packed vs holey arrays · V8 engine internals · Performance implications | ✅ Complete |
+| | | **74** | | |
 
-> ✅ JavaScript playlist complete - 20 modules | 65 files | 2 Weeks.  
+> ✅ JavaScript playlist complete - 20 modules · 74 files · 51 videos · 2 weeks.
 > 🚀 Next: MERN stack - Node.js · Express · MongoDB · React
+
 ---
 
 ## How to Run
@@ -262,8 +264,17 @@ abdurrehmankhan0909@gmail.com · [GitHub](https://github.com/AbdurRehmanKhan-ARK
 
 <div align="center">
 
-**If this repository helped you understand a concept or saved you time, consider leaving a ⭐ , it genuinely means a lot.**
+**If this repository helped you understand a concept or saved you time, consider leaving a ⭐ - it genuinely means a lot.**
+
 <br/>
+
+_51 videos. 74 files. 20 folders. 2 weeks._
+_Every concept written by hand. Every mistake left in on purpose. Every session committed._
+
+_This is what learning in public looks like._
+
+<br/>
+
 _Built in public. Imperfect by design. Improving every commit._
 
 </div>
