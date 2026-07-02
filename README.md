@@ -12,7 +12,7 @@ _Every concept practiced in isolation. Every file committed. Every session track
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-Runtime-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Series](https://img.shields.io/badge/Series-Chai%20aur%20Code-FF6B35?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
+![Status](https://img.shields.io/badge/Status-JS%20Complete%20%7C%20MERN%20Next-brightgreen?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
 </div>
@@ -193,6 +193,9 @@ JavaScript-Tutorials/
 | `18_getters_setters/` | **Getters & Setters** | 1 file | `get` / `set` syntax · Computed properties · Stack overflow pitfalls with recursive setters | ✅ Complete |
 | `19_closures_adv/` | **Closure and Lexical Scoping** | 1 file | Lexical scoping · Closures · Practical closure use cases | ✅ Complete |
 | `20_array_internals/` | **Array Internals** | 1 | Packed vs holey arrays · V8 engine internals · Performance implications | ✅ Complete |
+
+> ✅ JavaScript playlist complete — 20 modules, 50+ files, 2 Weeks.  
+> 🚀 Next: MERN stack — Node.js · Express · MongoDB · React
 ---
 
 ## How to Run
