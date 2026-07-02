@@ -194,8 +194,8 @@ JavaScript-Tutorials/
 | `19_closures_adv/` | **Closure and Lexical Scoping** | 1 file | Lexical scoping · Closures · Practical closure use cases | ✅ Complete |
 | `20_array_internals/` | **Array Internals** | 1 | Packed vs holey arrays · V8 engine internals · Performance implications | ✅ Complete |
 
-> ✅ JavaScript playlist complete — 20 modules, 50+ files, 2 Weeks.  
-> 🚀 Next: MERN stack — Node.js · Express · MongoDB · React
+> ✅ JavaScript playlist complete - 20 modules | 65 files | 2 Weeks.  
+> 🚀 Next: MERN stack - Node.js · Express · MongoDB · React
 ---
 
 ## How to Run
